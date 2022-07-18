@@ -1,14 +1,18 @@
 import 'package:bootcamp_tes2/constants/constant.dart';
 // import 'package:bmi/helpers/bmi_calculator.dart';
 import 'package:bootcamp_tes2/views/home.dart';
+import 'package:bootcamp_tes2/views/view_menu/akun.dart';
 import 'package:bootcamp_tes2/views/view_menu/e-waliet.dart';
 import 'package:bootcamp_tes2/views/view_menu/game.dart';
+import 'package:bootcamp_tes2/views/view_menu/history.dart';
+import 'package:bootcamp_tes2/views/view_menu/market.dart';
 import 'package:bootcamp_tes2/views/view_menu/more.dart';
 import 'package:bootcamp_tes2/views/view_menu/notifications.dart';
 import 'package:bootcamp_tes2/views/view_menu/paket_data.dart';
 import 'package:bootcamp_tes2/views/view_menu/prodak.dart';
 import 'package:bootcamp_tes2/views/view_menu/pulsa.dart';
 import 'package:bootcamp_tes2/views/view_menu/seting.dart';
+import 'package:bootcamp_tes2/views/view_menu/shopping.dart';
 import 'package:bootcamp_tes2/views/view_menu/tagihan.dart';
 import 'package:bootcamp_tes2/views/view_menu/token_listrik.dart';
 import 'package:bootcamp_tes2/views/view_menu/voucher_data.dart';
@@ -250,9 +254,10 @@ class _BcDataScreenState extends State<BcDataScreen> {
                                         child: Text(
                                           "Rp2.215",
                                           textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              fontSize: 20,
-                                              fontWeight: FontWeight.bold),
+                                          style: lableTextStyle,
+                                          // style: TextStyle(
+                                          //     fontSize: 20,
+                                          //     fontWeight: FontWeight.bold),
                                         ),
                                         width: 100,
                                         height: 50,
@@ -1228,7 +1233,7 @@ class _BcDataScreenState extends State<BcDataScreen> {
                                             ),
                                             Container(
                                               child: Text(
-                                                "1",
+                                                "",
                                                 style: TextStyle(fontSize: 15),
                                               ),
                                               width: 240,
@@ -1523,7 +1528,7 @@ class _BcDataScreenState extends State<BcDataScreen> {
                                             ),
                                             Container(
                                               child: Text(
-                                                "1",
+                                                "",
                                                 style: TextStyle(fontSize: 15),
                                               ),
                                               width: 240,
@@ -1784,7 +1789,17 @@ class _BcDataScreenState extends State<BcDataScreen> {
                                   children: [
                                     Container(
                                       child: GestureDetector(
-                                        onTap: () {},
+                                        onTap: () {
+                                          //Koneksi
+                                          Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                              builder: ((context) {
+                                                return History();
+                                              }),
+                                            ),
+                                          );
+                                          //Koneksi
+                                        },
                                         child: Icon(
                                           Icons.widgets,
                                           color: Colors.white,
@@ -1808,7 +1823,17 @@ class _BcDataScreenState extends State<BcDataScreen> {
                                   children: [
                                     Container(
                                       child: GestureDetector(
-                                        onTap: () {},
+                                        onTap: () {
+                                          //Koneksi
+                                          Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                              builder: ((context) {
+                                                return History();
+                                              }),
+                                            ),
+                                          );
+                                          //Koneksi
+                                        },
                                         child: Icon(
                                           Icons.restore,
                                           color: Colors.white,
@@ -1832,7 +1857,17 @@ class _BcDataScreenState extends State<BcDataScreen> {
                                   children: [
                                     Container(
                                       child: GestureDetector(
-                                        onTap: () {},
+                                        onTap: () {
+                                          //Koneksi
+                                          Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                              builder: ((context) {
+                                                return Market();
+                                              }),
+                                            ),
+                                          );
+                                          //Koneksi
+                                        },
                                         child: Icon(
                                           Icons.store_mall_directory,
                                           color: Colors.white,
@@ -1856,7 +1891,17 @@ class _BcDataScreenState extends State<BcDataScreen> {
                                   children: [
                                     Container(
                                       child: GestureDetector(
-                                        onTap: () {},
+                                        onTap: () {
+                                          //Koneksi
+                                          Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                              builder: ((context) {
+                                                return Shopping();
+                                              }),
+                                            ),
+                                          );
+                                          //Koneksi
+                                        },
                                         child: Icon(
                                           Icons.add_shopping_cart,
                                           color: Colors.white,
@@ -1880,7 +1925,17 @@ class _BcDataScreenState extends State<BcDataScreen> {
                                   children: [
                                     Container(
                                       child: GestureDetector(
-                                        onTap: () {},
+                                        onTap: () {
+                                          //Koneksi
+                                          Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                              builder: ((context) {
+                                                return Akun();
+                                              }),
+                                            ),
+                                          );
+                                          //Koneksi
+                                        },
                                         child: Icon(
                                           Icons.person,
                                           color: Colors.white,

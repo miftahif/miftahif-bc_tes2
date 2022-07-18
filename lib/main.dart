@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
         // scaffoldBackgroundColor: primaryColor,
         appBarTheme: const AppBarTheme(),
         primarySwatch: Colors.blue,
+        //backgroundColor: Colors.red,
       ),
       // #0A0E21
       //backgroundColor: primaryColor
