@@ -39,6 +39,8 @@ class BcDataScreen extends StatefulWidget {
 class _BcDataScreenState extends State<BcDataScreen> {
   @override
   Widget build(BuildContext context) {
+    //Size size = MediaQuery.of(context).size;
+
     return Scaffold(
       appBar: AppBar(
         actions: [BarAtas()],
@@ -100,6 +102,17 @@ class _BcDataScreenState extends State<BcDataScreen> {
                               color: Colors.white,
                             ),
                             ViewProduk(),
+
+                            // Container(
+                            //   //height: size.height * 0.2,
+                            //   width: size.width * 0.4,
+
+                            //   child: Column(
+                            //     children: [
+                            //       Image.asset("assets/images/imgsaya.jpg")
+                            //     ],
+                            //   ),
+                            // )
                           ],
                         )),
                         Container(
